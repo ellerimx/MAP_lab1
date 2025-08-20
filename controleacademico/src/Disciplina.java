@@ -44,12 +44,13 @@ public class Disciplina {
         return alunos.size();
     }
 
-    public List<Aluno> informarAlunos() {
-        return getAlunos();
+   public List<Aluno> informarAlunos() {
+    	return getAlunos();
     }
+   
 
     public String informarHorarioDisciplina() {
         if (horario == null) return "Disciplina sem horário definido.";
-        return horario.getDiaSemana() + ", horário: " + horario.getHoraInicio() + "–" + horario.getHoraFim();
+        return horario.getDiaSemana() + ", de " + horario.getHoraInicio() + "–" + horario.getHoraFim();
     }
 }

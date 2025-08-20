@@ -19,6 +19,7 @@ public class Aluno {
     public String getNome() { return nome; }
     public String getDisciplina() { return disciplina; }
     public void setDisciplina(String disciplina) { this.disciplina = disciplina; }
+    public String toString ()  { return nome; }
 
 
     public List<Disciplina> getDisciplinas() { return disciplinas; }
