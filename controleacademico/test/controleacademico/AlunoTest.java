@@ -35,7 +35,6 @@ public class AlunoTest {
         String disciplinaEsperada = "História";
         aluno.setDisciplina(disciplinaEsperada);
 
-        // ASSERT
         Assertions.assertEquals(disciplinaEsperada, aluno.getDisciplina(), "O campo disciplina deve ser atualizado.");
     }
 
@@ -59,7 +58,7 @@ public class AlunoTest {
         Assertions.assertEquals(tamanhoInicial, aluno.getDisciplinas().size(), "A lista não deve ser alterada.");
     }
 
-    @Test //ao tentar matricular uma disciplina que ja está
+    @Test //ao tentar matricular uma disciplina que ja está matriculado
     void testMatricular_disciplinaJaExistente() {
         aluno.matricular(disciplinaTeste); 
 

@@ -52,6 +52,6 @@ public class Disciplina {
 
     public String informarHorarioDisciplina() {
         if (horario == null) return "Disciplina sem horário definido.";
-        return horario.getDiaSemana() + ", de " + horario.getHoraInicio() + "–" + horario.getHoraFim();
+        return horario.getDiaSemana() + ", de " + horario.getHoraInicio() + "-" + horario.getHoraFim();
     }
 }
